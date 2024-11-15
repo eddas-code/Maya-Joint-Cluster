@@ -1,0 +1,9 @@
+from maya.cmds import *  
+
+cls=cluster()
+
+jt=createNode('joint')
+
+delete(pointConstraint(cls[1],jt))
+
+delete(cls)
